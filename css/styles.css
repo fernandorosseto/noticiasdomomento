@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
+}
+
+body {
+  min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
+header {
+  height: 17svh;
+  min-width: 384px;
+  /* background-color: blueviolet; */
+  /* border-bottom: solid 3px black; */
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  top: 10rem;
+  width: 100%;
+  min-width: 384px;
+  background-color: rgba(2, 2, 2);
+}
+
+#banner-google-ads-header {
+  min-height: 200px;
+  min-width: 728px;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+/* #banner-google-ads-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 5.5rem;
+  width: 100%;
+  background-color: rgb(2, 2, 2);
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 5px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  place-items: center;
+  height: 100%;
+  min-width: 384px;
+}
+
+.box {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2.1rem;
+  width: 101%;
+  bottom: 0.55rem;
+  background-color: rgb(59, 109, 138);
+  z-index: -1;
+}
+
+.title-style {
+  font-size: 3.1rem;
+  color: rgb(32, 31, 31);
+  text-align: center;
+}
+
+/* .title-style::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.6rem;
+  width: 100%;
+  bottom: 0.6rem;
+  background-color: rgba(202, 198, 198, 0.541);
+  background: linear-gradient(to right, rgb(133, 5, 5), rgb(18, 18, 85));
+  opacity: 0.3;
+  z-index: -1;
+} */
+
+/* #news {
+  height: 82svh;
+} */
+
+@media (max-width: 900px) {
+  header {
+    height: 14dvh;
+  }
+
+  header::after {
+    height: 1.5px;
+    top: 6rem;
+  }
+
+  #banner-google-ads-header {
+    min-width: 384px;
+    min-height: 100px;
+  }
+
+  /* #banner-google-ads-header::after {
+    height: 1px;
+    top: 3rem;
+  } */
+
+  .title-style {
+    font-size: 2.1rem;
+  }
+  /* .title-style::before {
+    height: 0.4rem;
+    bottom: 0.3rem;
+  } */
+
+  .box {
+    font-size: 1.4rem;
+  }
+
+  .box::before {
+    height: 1.4rem;
+    bottom: 0.4rem;
+  }
+}
