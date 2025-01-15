@@ -1,24 +1,24 @@
-const monthNames = [
-  "JAN",
-  "FEV",
-  "MAR",
-  "ABR",
-  "MAI",
-  "JUN",
-  "JUL",
-  "AGO",
-  "SET",
-  "OUT",
-  "NOV",
-  "DEZ",
-];
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNavigation = document.querySelector(".primary-navigation");
 
-const datenow = new Date();
-const day = datenow.getDate();
-const month = monthNames[datenow.getMonth() + 1];
-let $month_day = document.getElementById("month-day");
-$month_day.innerHTML = ` ${month}. ${day}`;
+menuToggle.addEventListener("click", () => {
+  const isOpened = menuToggle.getAttribute("aria-expanded") === "true";
+  isOpened ? closeMenu() : openMenu();
+});
 
-const year = datenow.getFullYear();
-let $year = document.getElementById("year");
-$year.innerHTML = year;
+function openMenu() {
+  menuToggle.setAttribute("aria-expanded", "true");
+  siteNavigation.setAttribute("data-state", "opened");
+}
+function closeMenu() {
+  menuToggle.setAttribute("aria-expanded", "false");
+  siteNavigation.setAttribute("data-state", "closing");
+
+  siteNavigation.addEventListener(
+    "animationend",
+    () => {
+      siteNavigation.setAttribute("data-state", "closed");
+    },
+    { once: true }
+  );
+}
