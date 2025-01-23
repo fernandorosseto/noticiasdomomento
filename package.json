@@ -1,0 +1,24 @@
+{
+  "name": "noticiasdomomento",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/https-github-com-fernandorosseto/noticiasdomomento.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/https-github-com-fernandorosseto/noticiasdomomento/issues"
+  },
+  "homepage": "https://github.com/https-github-com-fernandorosseto/noticiasdomomento#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
