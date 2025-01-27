@@ -19,6 +19,7 @@
   "homepage": "https://github.com/https-github-com-fernandorosseto/noticiasdomomento#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
   }
 }
