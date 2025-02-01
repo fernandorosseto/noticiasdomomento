@@ -9,7 +9,7 @@
 header {
   padding: 1em 0;
   position: relative;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
 }
 
 header::after {
