@@ -31,3 +31,33 @@ noticias-do-momento/
 ├── script.js         # Lógica de interação e consumo de API
 ├── assets/           # Imagens, ícones e outros recursos estáticos
 └── README.md         # Documentação do projeto
+
+
+css/
+│
+├── base/              # Estilos base (reset, tipografia, variáveis)
+│   ├── _reset.css     # Reset CSS (normalize ou reset personalizado)
+│   ├── _typography.css # Estilos de tipografia (fontes, tamanhos, etc.)
+│   └── _variables.css # Variáveis CSS (cores, espaçamentos, etc.)
+│
+├── components/        # Estilos para componentes reutilizáveis
+│   ├── _buttons.css   # Estilos para botões
+│   ├── _cards.css     # Estilos para cards
+│   ├── _navbar.css    # Estilos para a barra de navegação
+│   └── _footer.css    # Estilos para o rodapé
+│
+├── layout/            # Estilos para o layout geral
+│   ├── _grid.css      # Sistema de grid (flexbox, grid, etc.)
+│   ├── _header.css    # Estilos para o cabeçalho
+│   └── _sidebar.css   # Estilos para a barra lateral
+│
+├── pages/             # Estilos específicos para páginas
+│   ├── _home.css      # Estilos para a página inicial
+│   ├── _about.css     # Estilos para a página "Sobre"
+│   └── _contact.css   # Estilos para a página de contato
+│
+├── themes/            # Temas (se necessário)
+│   ├── _light.css     # Tema claro
+│   └── _dark.css      # Tema escuro
+│
+└── main.css           # Arquivo principal que importa todos os outros
