@@ -1,0 +1,3 @@
+footer {
+    height: calc(var(--altura-div) + 5rem);
+}

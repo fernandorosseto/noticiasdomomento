@@ -1,0 +1,40 @@
+/* Styles banner ads */
+
+.banner-ads {
+    background-color: var(--text-color-white);
+    min-height: 250px;
+    min-width: 300px;
+}
+
+#banner-google-ads-bot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: var(--altura-div);
+    background-color: var(--primary-color);
+}
+  
+/* End styles banner ads */
+
+/* Info boxes: Dolar, Euro and Cripto */
+
+#info-boxes {
+    display: flex;
+    height: 8dvh;
+    min-width: 60dvw;
+    background-color: var(--primary-color);
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.info-box {
+    display: flex;
+    height: 5dvh;
+    width: 15dvw;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

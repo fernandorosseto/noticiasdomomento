@@ -1,0 +1,25 @@
+.news-content {
+    background-color: var(--text-color-white);
+    width: 95dvw;
+    justify-self: center;
+}
+
+.info-news {
+    background-color: var(--color-background);
+    display: flex;
+    height: 3dvh;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.news-content > h2,
+h3,
+h4 {
+    padding: 15px 0px 0px 0px;
+}
+
+p {
+    padding: 15px 0px 0px 0px;
+    text-indent: 20px;
+}
