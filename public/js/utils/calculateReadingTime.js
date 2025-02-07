@@ -1,5 +1,3 @@
-
-
 function calculateReadingTime(element) {
   const wordsPerMinute = 200; // Média de leitura: 200 palavras por minuto
   const textContent = element.textContent;
@@ -15,3 +13,5 @@ const readingTimeElement = document.getElementById('reading-time');
 const readingTime = calculateReadingTime(article);
 
 readingTimeElement.textContent = `Tempo de leitura aproximado: ${readingTime} minuto(s)`;
+
+export default {calculateReadingTime};

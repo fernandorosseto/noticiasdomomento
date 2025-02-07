@@ -24,4 +24,4 @@ function closeMenu() {
   );
 }
 
-export { openMenu, closeMenu };
+export {openMenu, closeMenu};
