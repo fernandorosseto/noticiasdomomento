@@ -1,3 +1,19 @@
+function loadHeader() {
+  fetch("/public/pagesHtml/template/header.html")
+    .then(response => response.text())
+    .then(data => {
+      const headerContainer = document.getElementById("header");
+      if (headerContainer) {
+        headerContainer.innerHTML = data;
+      } else {
+        console.warn("Elemento #header não encontrado na página.");
+      }
+    })
+    .catch(error => console.error("Erro ao carregar o header:", error));
+}
+
+document.addEventListener("DOMContentLoaded", loadHeader);
+
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNavigation = document.querySelector(".primary-navigation");
 
@@ -24,4 +40,4 @@ function closeMenu() {
   );
 }
 
-export {openMenu, closeMenu};
+export {openMenu, closeMenu, loadHeader};
