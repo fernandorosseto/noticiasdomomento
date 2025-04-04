@@ -1,6 +1,7 @@
 .news-content {
     background-color: var(--text-color-white);
     width: 95dvw;
+    height: 100vh;
     justify-self: center;
 }
 
