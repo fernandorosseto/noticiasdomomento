@@ -5,6 +5,8 @@ const app = express();
 const port = 3000; // Porta que o servidor irá ouvir
 
 app.use(express.json())
+app.use(express.static('public'));
+
 
 app.get("/", (req, res) => {
   res.send("Olá do Backend com Node.js e Express!");
