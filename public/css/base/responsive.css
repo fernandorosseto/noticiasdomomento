@@ -3,4 +3,13 @@
       background-color: var(--accent-color);
       max-width: 900px;
     }
+
+    #news{
+      width: 73dvw;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      margin: 0 2rem;
+
+    }
 }

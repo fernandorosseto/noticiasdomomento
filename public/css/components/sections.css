@@ -1,3 +1,6 @@
+#news{
+    padding: 1rem;
+}
 .news-content {
     background-color: var(--text-color-white);
     width: 95dvw;

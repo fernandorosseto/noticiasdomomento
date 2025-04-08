@@ -1,5 +1,5 @@
 function loadHeader() {
-  fetch("/public/pagesHtml/template/header.html")
+  fetch('pagesHtml/template/header.html')
     .then(response => response.text())
     .then(data => {
       const headerContainer = document.getElementById("header");
@@ -55,7 +55,5 @@ function closeMenu() {
     );
   }
 }
-
-document.addEventListener("DOMContentLoaded", loadHeader);
 
 export { openMenu, closeMenu, loadHeader };

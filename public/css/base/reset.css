@@ -24,6 +24,7 @@ body {
 main{
   background-color: aqua;
   height: 1000px;
+
 }
 
 img,
@@ -52,6 +53,7 @@ h5,
 h6 {
   text-wrap: balance;
   overflow-wrap: break-word;
+  
 }
 
 p {
